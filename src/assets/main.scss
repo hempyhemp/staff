@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "PFDinDisplayPro";
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+  unicode-range: U+000-5FF;
+  src: url("/fonts/PFDinDisplayPro/PFDinDisplayPro-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PFDinDisplayPro";
+  font-weight: 500;
+  font-style: normal;
+  font-display: auto;
+  unicode-range: U+000-5FF;
+  src: url("/fonts/PFDinDisplayPro/PFDinDisplayPro-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PFDinDisplayPro";
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+  unicode-range: U+000-5FF;
+  src: url("/fonts/PFDinDisplayPro/PFDinDisplayPro-Bold.woff") format("woff");
+}
+
+main {
+  @include to-desktop {
+    padding: 30px 0 0 0;
+  }
+
+  padding: 48px 0 0 88px;
+}
+
+body {
+  font-family: PFDinDisplayPro;
+  font-weight: 400;
+  line-height: 21px;
+  font-size: 14px;
+
+  padding: 0px;
+  margin: 0px;
+  background: $color-background;
+}
+
+* {
+  font-family: PFDinDisplayPro;
+  color: $color-black;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1 {
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

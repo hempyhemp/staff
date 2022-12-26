@@ -1,0 +1,11 @@
+{
+  "comment": "This is a little hack for WebStorm module imports",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  }
+}
