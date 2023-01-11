@@ -27,10 +27,10 @@
 
 main {
   @include to-desktop {
-    padding: 30px 0 0 0;
+    padding: 30px 0;
   }
 
-  padding: 48px 0 0 88px;
+  padding: 48px 0 48px 88px;
 }
 
 body {

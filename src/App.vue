@@ -10,15 +10,19 @@
     <div class="container">
       <div class="title">
         <h1 class="unselectable">Сотрудники</h1>
-        <company-profile style="margin-right: 20px;" name="ООО «Модуль»" logo="/icons/companylogo.svg"/>
+        <company-profile
+            style="margin-right: 20px;"
+            name="ООО «Модуль»"
+            :logo="$getImageURL('/icons/companylogo.svg')"
+        />
       </div>
 
       <app-toolbar>
         <template #left>
-          <app-button icon="/icons/manplus.svg" type="primary">
+          <app-button :icon="$getImageURL('/icons/manplus.svg')" type="primary">
             Добавить сотрудника
           </app-button>
-          <app-button icon="/icons/cicrleplus.svg" type="tertiary">
+          <app-button :icon="$getImageURL('/icons/cicrleplus.svg')" type="tertiary">
             Создать новый отдел
           </app-button>
         </template>
@@ -26,7 +30,7 @@
         <template #right>
           <app-button type="secondary"> Скачать список прошедших</app-button>
           <app-button type="secondary"> Экспорт</app-button>
-          <app-button icon="/icons/upload.svg" type="secondary">
+          <app-button :icon="$getImageURL('/icons/upload.svg')" type="secondary">
             Загрузить списком
           </app-button>
         </template>

@@ -41,10 +41,10 @@
           </td>
           <td class="row-actions">
             <div style="padding-top: 12px; padding-bottom: 0;"> <!-- TODO -->
-              <app-button icon="/icons/edit.svg" type="actions" @click.stop=""/>
-              <app-button icon="/icons/delete.svg" type="actions" @click.stop=""/>
+              <app-button :icon="$getImageURL('/icons/edit.svg')" type="actions" @click.stop=""/>
+              <app-button :icon="$getImageURL('/icons/delete.svg')" type="actions" @click.stop=""/>
               <app-button
-                  icon="/icons/arrow.svg"
+                  :icon="$getImageURL('/icons/arrow.svg')"
                   type="actions"
                   :class="{ hide: category.isHidden }"/>
             </div>
@@ -68,11 +68,12 @@
           <td class="row-actions">
             <div>
               <div class="user-actions">
-                <app-button icon="/icons/change.svg" type="actions" @click.stop=""/>
-                <app-button @click.stop="remove(category, user)" icon="/icons/delete.svg" type="actions"/>
+                <app-button :icon="$getImageURL('/icons/change.svg')" type="actions" @click.stop=""/>
+                <app-button @click.stop="remove(category, user)" :icon="$getImageURL('/icons/delete.svg')"
+                            type="actions"/>
               </div>
 
-              <app-button icon="/icons/arrow right.svg" type="actions"/>
+              <app-button :icon="$getImageURL('/icons/arrow right.svg')" type="actions"/>
             </div>
           </td>
         </tr>
@@ -107,25 +108,25 @@ export default {
           name: 'Отдел продаж',
           staff: [
             {
-              id: 4,
-              name: 'Денис Сокольников',
-              position: 'Должник',
+              id: 1,
+              name: 'Сергеевич Сергей Сергачук',
+              position: 'Главный продавец',
               status: 'Проходит',
               recordDate: '05.09.2022',
               visitDate: '06.06.2022'
             },
             {
-              id: 4,
-              name: 'Денис Сокольников',
-              position: 'Должник',
+              id: 2,
+              name: 'Максимович Максим Максидом',
+              position: 'Продавец',
               status: 'Проходит',
               recordDate: '05.09.2022',
               visitDate: '06.06.2022'
             },
             {
-              id: 4,
-              name: 'Денис Сокольников',
-              position: 'Должник',
+              id: 3,
+              name: 'Иванов Иван Иванович',
+              position: 'Продавец',
               status: 'Проходит',
               recordDate: '05.09.2022',
               visitDate: '06.06.2022'
@@ -138,50 +139,50 @@ export default {
           name: 'Склад',
           staff: [
             {
-              id: 1,
-              name: 'Оскар Хамитов',
+              id: 4,
+              name: 'Оби Обиван Кеноби',
               position: 'Кладовщик',
               status: 'Проходит',
               recordDate: '05.09.2022',
               visitDate: '06.06.2022'
             },
             {
-              id: 2,
-              name: 'Никита Круглицкий',
-              position: 'Главный по тарелочкам',
-              status: 'Проходит',
-              recordDate: '05.09.2022',
-              visitDate: '06.06.2022'
-            },
-            {
-              id: 3,
-              name: 'Иван Грачёв',
-              position: 'Главный по главным',
-              status: 'Не влазит',
-              recordDate: '05.09.2022',
-              visitDate: '06.06.2022'
-            },
-            {
-              id: 1,
-              name: 'Оскар Хамитов',
+              id: 5,
+              name: 'Тупак Амару Шакур',
               position: 'Кладовщик',
               status: 'Проходит',
               recordDate: '05.09.2022',
               visitDate: '06.06.2022'
             },
             {
-              id: 2,
-              name: 'Никита Круглицкий',
-              position: 'Главный по тарелочкам',
+              id: 6,
+              name: 'Максимович Максим Максидом',
+              position: 'Главный кладовщик',
               status: 'Проходит',
               recordDate: '05.09.2022',
               visitDate: '06.06.2022'
             },
             {
-              id: 3,
-              name: 'Иван Грачёв',
-              position: 'Главный по главным',
-              status: 'Не влазит',
+              id: 7,
+              name: 'Иванов Иван Иванович',
+              position: 'Кладовщик',
+              status: 'Проходит',
+              recordDate: '05.09.2022',
+              visitDate: '06.06.2022'
+            },
+            {
+              id: 8,
+              name: 'Иванов Иван Иванович',
+              position: 'Кладовщик',
+              status: 'Проходит',
+              recordDate: '05.09.2022',
+              visitDate: '06.06.2022'
+            },
+            {
+              id: 9,
+              name: 'Иванов Иван Иванович',
+              position: 'Кладовщик',
+              status: 'Проходит',
               recordDate: '05.09.2022',
               visitDate: '06.06.2022'
             },
